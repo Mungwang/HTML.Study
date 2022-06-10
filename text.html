@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>와이어 프레임 테스트</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        li{
+            list-style: none;
+        }
+        
+        #wrap{
+            width: 1600px;
+            background-color: cadetblue;
+            overflow: hidden;
+        }
+        .header{
+            width: 1600px;
+            height: 100px;
+            background-color: aqua;
+        }
+        .logo{
+            width: 350px;
+            height: 100px;
+            background-color: antiquewhite;
+            background: url(images/musinsa.png);
+            background-size: cover;
+            float: left;
+        }
+        .menu{
+            width: 1250px;
+            height: 100px;
+            background-color: blue;
+            float: left;
+            position: relative;
+        }
+        .menu_list{
+            position: absolute;
+            width: 1000px;
+            background-color: crimson;
+            right: 0;
+            bottom: 0;
+        }
+        .menu_list li{
+            width: 250px;
+            list-style:none;
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .img_s{
+            width: 1600px;
+            height: 400px;
+            text-indent: -1000px;
+            background-color: aqua;
+            background: url(images/mmm.png);
+            background-size: cover
+        }
+        .ct{
+            width: 1600px;
+            height: 320px;
+            background-color: blue;
+        }
+        .ct_box{
+            width: 33.3333%;
+            height: 320px;
+            float: left;
+            background-color: aquamarine
+        }
+        .info{
+            background-color: cornflowerblue;
+            width: 33.3333%;
+            height: 320px;
+        }
+        .info_text{
+            height: 160px;
+            background-color: aquamarine;
+        }
+        .info_text_list li{
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+        .info_jpg{
+            height: 160px;
+            background:url(images/cap.png);
+            background-size: cover;
+            text-indent: -10000px;
+        }
+        .bn{
+            background-color: green;
+        }
+        .bn_one{
+            background-color: bisque;
+            height: 160px;
+        }
+        
+        .bn_one img{
+            width: 100%;
+            height: 160px;
+        }
+        .bn_two{
+            background-color: blue;
+            height: 160px;
+        }
+        .bn_two img{
+            width: 100%;
+            height: 160px;
+        }
+        .br{background-color: darkred;
+            
+        }
+        .footer{
+            width: 1600px;
+            height: 100px;
+            background-color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="warp">
+        <div class="header">
+            <div class="logo">
+            </div>
+                <div class="menu">
+                  <ul class="menu_list">
+                     <li>랭킹</li>
+                     <li>업데이트</li>
+                     <li>코디</li>
+                     <li>세일</li>
+                  </ul>
+                 
+                </div>
+            </div>        
+            <div class="img_s">
+                이미지영역
+            </div>
+            <div class="ct">
+                <div class="ct_box info">
+                    <div class="info_text">
+                        <ul class="info_text_list">
+                            <li>6월 가정의달 이벤트</li>
+                            <li>무신사데이</li>
+                            <li>사은품증정이벤트</li>
+                            <li>1+1이벤트 진행중</li>
+                        </ul>          
+                    </div>
+                    <div class="info_jpg">
+                            이미지
+                    </div>
+                </div>
+                <div class="ct_box bn">
+                    <div class="bn_one">
+                        <a href="http://www.musinsa.com">
+                        <img src="images/musinsa.png" alt="">
+                        </a>
+                    </div>
+                    <div class="bn_two">
+                        <a href="http://www.musinsa.com">
+                            <img src="images/123.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="ct_box br">
+                    바로가기
+                </div>
+                        
+            </div>
+            <div class="footer">
+                하단메뉴 copyright 패밀리사이트
+            </div>        
+    </div>
+</body>
+</html>

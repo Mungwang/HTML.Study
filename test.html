@@ -1,35 +1,68 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>성적표</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        li{
+            list-style: none;
+        }
+        
+        .contents{
+            width: 1200px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+        
+        .contents_box{
+            width: 33.3333333%;
+            height: 200px;
+            background-color: antiquewhite;
+            float: left;
+        }
+        
+        .info{
+            background-color: blue;
+        }
+        
+        .info_text{
+            height: 100px;
+            background-color: azure;
+        }
+        
+        .info_img{
+            height: 100px;
+            background-color: fuchsia;
+        }
+        
+        
+    </style>
 </head>
 <body>
-<table border="10px" width="500px" height="400px">
-<tr>
-<th>이름</th>
-<th>영어점수</th>
-<th>수학점수</th>
-<th>평균</th>
-</tr>
-<tr>
-<th>김민우</th>
-<td> 100</td>
-<td>90</td>
-<td>95</td>
-</tr>
-<tr>
-<th>이승재</th>
-<td>90</td>
-<td>100</td>
-<td>95</td>
-</tr>
-<tr>
-<th>정은경</th>
-<td>80</td>
-<td>85</td>
-<td>82.5</td>
-</tr>
-</table>
-
+    <div class="contents">
+        <div class="contents_box info">
+            <div class="info_text">
+                <ul class="info_text_list">
+                    <li>감자</li>
+                    <li>고구마</li>
+                    <li>옥수수</li>
+                </ul>
+            </div>
+            <div class="info_img">
+                <img src="images/1.png" alt="">
+            </div>
+        </div>
+        <div class="contents_box banner">
+            배너
+        </div>
+        <div class="contents_box baro">
+            바로가기
+        </div>
+    </div>
 </body>
-
 </html>
