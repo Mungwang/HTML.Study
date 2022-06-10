@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>와이어프레임 연습</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #wrap{
+            width: 1000px;
+            background-color: aqua;
+        }
+        .header{
+            width: 1000px;
+            height: 100px;
+            overflow: hidden;
+        }
+        .logo{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            float: left;
+        }
+        .logo_title{
+            color: white;
+            text-align: center;
+            line-height: 100px; 
+        }
+        .menu{
+            width: 800px;
+            height: 100px;
+            background-color: blue;
+            float: left;
+            position: relative;
+        }
+        .menu_list{
+            width: 600px;
+            background-color:darkgoldenrod;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+        }
+        .menu_list li{
+            color: white;
+            float: left;
+            width: 150px;
+            list-style: none;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .img_slide{
+            width: 1000px;
+            height: 300px;
+            background: url(images/1.png);
+            background-size: cover;
+            text-indent: -100px;   
+        }
+        
+        .contents{
+            width: 1000px;
+            height: 200px;
+            background-color:darkgoldenrod;
+            color: white;
+        }
+        .contents_box{
+            width: 33.33333%;
+            height: 200px;
+            float: left;
+            text-align: center;
+            line-height: 200px;
+        }
+        .if{
+            
+        }
+        .gr{
+            background-color: aqua;
+            color: black
+        }
+        .ba{
+            
+        }
+        .footer{
+            width: 1000px;
+            height: 100px;
+            background-color: brown;
+            color: white;
+        }
+        .footer_box{
+            height: 100px;
+            text-align: center;
+            color: white;
+            line-height: 100px;
+            float: left;
+        }
+        .footer_lo{
+            width: 200px;
+            background-color: blueviolet;
+        }
+        .footer_cp{
+            width: 600px;
+            background-color: cadetblue;
+        }
+        .footer_si{
+            width: 200px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="header">
+            <div class="logo">
+                <h1 class="logo_title">로고</h1>
+            </div>
+            <div class="menu">
+               <ul class="menu_list">
+                  <li>munu1</li>
+                  <li>munu2</li>
+                  <li>munu3</li>
+                  <li>munu4</li>
+              </ul>
+            </div>
+        </div>
+        <div class="img_slide">
+            이미지영역
+            </div>
+        <div class="contents">
+            <div class="contents_box if">
+                공지사항
+            </div>
+            <div class="contents_box gr">
+                갤러리
+            </div>
+            <div class="contents_box ba">
+                배너
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_box footer_lo">
+                    로고
+            </div>
+            <div class="footer_box footer_cp">
+                    Copyright
+            </div>
+            <div class="footer_box footer_si">
+                    패밀리사이트
+            </div>   
+        </div>
+    </div>
+</body>
+</html>
