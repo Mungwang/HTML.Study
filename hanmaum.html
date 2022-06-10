@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>한마음스포츠센터</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        img{
+            vertical-align: top;
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        #wrap{
+            width: 1050px;
+            height: 1200px;
+            background-color: #ffffff;
+            padding-left: 50px;
+            box-sizing: border-box;
+        }
+        .header{
+            width: 1000px;
+            height: 200px;
+        }
+        .header_logo{
+            width: 350px;
+            height: 200px;
+            background:url(images/logo2.png);
+            background-repeat: no-repeat;
+            float: left;
+            text-indent: -99999px;
+        }
+        .header_menu{
+            width: 650px;
+            height: 200px;
+            float: left; 
+            position: relative;
+        }
+        .header_menu_list{
+            width:600px;
+            height:200px;
+           
+            position: absolute;
+            right: 0;        
+        }
+        .header_menu_list li{
+            width: 200px;
+            height: 200px;
+            color: #666666;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 200px;
+            text-align: center;
+            float:left; 
+        }
+        .imgSlide{
+            width: 1000px;
+            height: 350px;
+            background:url(images/main1.jpg);
+            background-size: 1000px 350px;
+            position: relative;
+        }
+        .imgSlide_titlebox{
+            width: 380px;
+            background-color: rgba(255,255,255,0.8);
+            text-align: center;
+            border-radius: 10px;
+            padding: 25px 0;
+            left: 50%;
+            top: 45%;
+            transform:translate(-50%,-45%);
+            position: absolute;    
+        }
+        .imgSlide_titlebox h3{
+            color: #666666;
+        }
+        .imgSlide_titlebox h2{
+            color: #009688;
+        }
+        .contents{
+            width: 1000px;
+            height: 500px;
+            
+        }
+        .contents_box{
+            width: 300px;
+            height: 500px;
+            float: left;
+            margin-right: 50px;
+        }
+        .contents_title{
+            width: 300px;
+            height: 40px;
+            border-bottom: 1px solid #666666;
+            color: #666666;
+            font-size: 25px;
+            line-height: 40px;
+            margin-bottom: 20px;
+            padding-left: 20px;
+            margin-top: 80px;
+            box-sizing: border-box;
+        }
+        .contents_a_list li{
+            width: 300px;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 20px;
+            box-sizing: border-box;
+            font-size: 12px;
+            background: url(images/list_icon.png);
+            background-repeat: no-repeat;
+            background-position: 5px;
+            position: relative;
+        }
+        .contents_a_list li a:hover{
+            color: blue;    
+        }
+        .contents_a_list li span{
+            position: absolute;
+            right: 0;
+            bottom: 2px;
+        }
+        .contents_center_list li{
+            text-indent: -99999px;
+            width: 300px;
+            height: 60px;
+            padding: 0px 10px;
+            box-sizing: border-box;
+            
+        }
+        .contents_center_list li a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .contents_center_list li.icon1 a{
+            background: url(images/icon_out01.png);
+            background-repeat: no-repeat;
+        }
+        .contents_center_list li.icon1 a:hover{
+            background: url(images/icon_over01.png);
+            background-repeat: no-repeat;
+        }
+        .contents_center_list li.icon2 a{
+            background: url(images/icon_out02.png);
+            background-repeat: no-repeat;
+        }
+        .contents_center_list li.icon2 a:hover{
+            background: url(images/icon_over02.png);
+            background-repeat: no-repeat;    
+        }
+        .contents_center_list li.icon3 a{
+            background: url(images/icon_out03.png);
+            background-repeat: no-repeat;
+        }
+        .contents_center_list li.icon3 a:hover{
+            background: url(images/icon_over03.png);
+            background-repeat: no-repeat;
+        }
+        .contents_bus{
+            margin-right: 0px;
+        }
+        .contents_title_imgbox{
+            width: 300px;
+            height: 180px;
+            background: url(images/bus.jpg);
+            background-size: 300px 180px;
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+        .time{
+            width: 300px;
+            color:white;
+            font-size: 20px;
+            text-align: left;
+            padding: 20px;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+        .time1{
+            width: 300px;
+            color:white;
+            font-size: 20px;
+            text-align: left;
+            padding: 20px;
+            font-weight: bold;
+            box-sizing: border-box;
+            padding-top: 0px;
+        }
+        .footer{
+            width: 1000px;
+            height: 150px;
+            background-color: cadetblue;
+            color: white;
+            text-align: center;
+        }
+        .footer_one{
+            padding: 20px;
+        }
+        .footer_two{
+            margin: 5px;        
+        }
+        .footer_three{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+       <div class="header">
+          <div class="header_logo">
+                이미지영역
+          </div>
+          <div class="header_menu">
+              <ul class="header_menu_list">
+                  <li><a href="#">스포츠센터소개</a></li>
+                  <li><a href="#">프로그램 소개</a></li>
+                  <li><a href="#">커뮤니티</a></li>
+              </ul>
+          </div>   
+       </div>
+       <div class="imgSlide">
+            <div class="imgSlide_titlebox">
+                <h3>우리지역 최고 시설</h3>
+                <h2>한마음스포츠센터</h2>
+            </div>
+       </div>
+       <div class="contents">
+          <div class="contents_box contents_a">
+                <h2 class="contents_title">공지사항</h2>
+                <ul class="contents_a_list">
+                    <li><a href="#">한마음스포츠센터 검도 파트강사...</a><span>2017-10-19</span>        
+                    </li>
+                    <li><a href="#">한마음스포츠센터 탁구 파트강사...</a><span>2017-10-10</span>
+                    </li>
+                    <li><a href="#">한마음스포츠센터 수영장 프로그...</a><span>2017-10-06</span>        
+                    </li>
+                    <li><a href="#">온수공급 중단안내</a><span>2017-09-20</span>    
+                    </li>
+                    <li><a href="#">골프연습장 티치프로 모집</a><span>2017-09-12</span>    
+                    </li>
+                    <li><a href="#">한마음스포츠센터 여름방학특강</a><span>2017-07-15</span>
+                    </li>
+                </ul>
+          </div>
+          <div class="contents_box contents_center">
+                <h2 class="contents_title">센터안내</h2>
+                <ul class="contents_center_list">
+                    <li class="icon1">
+                        <a href="#">icon1</a>
+                    </li>
+                    <li class="icon2">
+                       <a href="#">icon3</a>
+                    </li>
+                    <li class="icon3">
+                        <a href="#">icon3</a>
+                    </li>
+                </ul>
+          </div>
+          <div class="contents_box contents_bus">
+                <h2 class="contents_title">셔틀버스안내</h2>
+                <div class="contents_title_imgbox">
+                    <p class="time">- 운행시간:09시~17시<br><span>(13시~14시 미운행)</span>
+                    <p>
+                    <p class="time1">- 운행요일:월요일~토요일<br><span>(단,공휴일제외)</span> 
+                    </p>
+                </div>
+           </div>
+           
+       </div>
+       <div class="footer">
+           <ul class="footer_list">
+               <li class="footer_one">법적고지 개인정보취급방침 개인정보처리방침
+               </li>
+               <li class="footer_two">
+                한마음스포츠센터 [612-030] 부산광역시 해운대구 세실로175 (좌동)    
+               </li>
+               <li class="footer_three">
+                전화번호 : (051) 709-0700     사업자등록번호 : 605-82-05242  대표자 : 김영수   
+               </li>
+               <li class="footer_four">
+                  copyright(c) 2010 Busan Infrastructure Corporation. all rights reserved 
+               </li>
+           </ul>
+       </div>
+    </div>
+</body>
+</html>

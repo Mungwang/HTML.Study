@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>이미지슬라이드 레이아웃</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .imgSlide{
+            width: 1000px;
+            height: 300px;
+            background-color: aqua;
+            background: url(images/main.jpg);
+            background-size: 1000px 300px;
+            position: relative 
+        }
+        .imgSlide_title_box{
+            width: 300px;
+            background-color: rgba(255,255,255,0.5);
+            border-radius: 5px;
+            text-align: center;
+            padding: 20px 0;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+        }
+        .imgSlide_title_box h3{
+            color: #6a6a6a;   
+        }
+        .imgSlide_title_box h2{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgSlide">
+        <div class="imgSlide_title_box">
+            <h3>우리지역 최고시설</h3>
+            <h2>한마음 스포츠센터</h2>
+        </div>
+    </div>
+</body>
+</html>
