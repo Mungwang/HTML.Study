@@ -2,66 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Creative Fields</title>
     <style>
         *{
             margin: 0;
-            padding: 0;
+            padding: 0;    
         }
-        
         li{
             list-style: none;
         }
-        
-        .contents{
-            width: 1200px;
-            height: 200px;
-            background-color: aquamarine;
+        .section{
+            width: 1000px;
+            height: 650px;
+            margin: 0 auto;
         }
-        
-        .contents_box{
-            width: 33.3333333%;
-            height: 200px;
-            background-color: antiquewhite;
+        .section_left{
+            width: 800px;
+            height: 650px;
             float: left;
         }
-        
-        .info{
-            background-color: blue;
+        .contents{
+            width: 800px;
+            margin-top: 20px;
+            margin-left: 20px;
         }
-        
-        .info_text{
-            height: 100px;
-            background-color: azure;
+        .contents_box{
+            width: 800px;
+            height: 200px;
+            float: left;
         }
-        
-        .info_img{
-            height: 100px;
-            background-color: fuchsia;
+        .contents_box img{
+            float: left;
+            margin-right: 20px;
         }
-        
-        
+        .contents_txt{
+            margin-right: 20px;
+        }
+        .section_right{
+            width: 200px;
+            height: 650px;
+            float: left;
+        }
+        .creative{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .creative h3{
+            font-size: 20px;
+            color: #1992a1;
+            margin-bottom: 20px;
+        }
+        .creative ul{
+            color: #999;
+        }
+        .creative ul li{
+            border-left: 2px solid #999;
+            padding-left: 5px;
+            font-size: 0.9rem
+        }
+        .creative ul li:hover{
+            color: #1992a1;
+            border-left: 2px solid #1992a1;
+        }
     </style>
 </head>
 <body>
-    <div class="contents">
-        <div class="contents_box info">
-            <div class="info_text">
-                <ul class="info_text_list">
-                    <li>감자</li>
-                    <li>고구마</li>
-                    <li>옥수수</li>
-                </ul>
-            </div>
-            <div class="info_img">
-                <img src="images/1.png" alt="">
-            </div>
+    <div class="section">
+       <div class="section_left">
+              <div class="contents">
+           <div class="contents_box jaws">
+                        <img src="images/section01.png" alt="jwas">
+                        <div class="contents_txt">
+                        <h3>Jaws</h3>
+                        <p>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae odit commodi cupiditate, molestias! Quas ab, vitae cupiditate magnam ipsum natus eaque repellat eos atque, nulla dolorum at! Similique, cumque, nulla!
+                            </p>  
+                        </div>
+                    </div>          
+                    <div class="contents_box giant">
+                        <img src="images/section02.png" alt="giant wave">
+                        <div class="contents_txt">
+                            <h3>Giant Wave</h3>
+                            <p>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae odit commodi cupiditate, molestias! Quas ab, vitae cupiditate magnam ipsum natus eaque repellat eos atque, nulla dolorum at! Similique, cumque, nulla!
+                            </p>  
+                        </div>
+                    </div>
+                    <div class="contents_box Maver">
+                        <img src="images/section03.png" alt="Mavericks">
+                        <div class="contents_txt">
+                        <h3>Mavericks</h3>
+                        <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae odit commodi cupiditate, molestias! Quas ab, vitae cupiditate magnam ipsum natus eaque repellat eos atque, nulla dolorum at! Similique, cumque, nulla!
+                        </p>            
+                        </div>
+                    </div>
+               </div>
         </div>
-        <div class="contents_box banner">
-            배너
-        </div>
-        <div class="contents_box baro">
-            바로가기
+        <div class="section_right">
+            <div class="creative">
+                        <h3>Creative fields</h3>
+                        <ul>
+                            <li>Graphic Design</li>
+                            <li>Web Development</li>
+                            <li>Moion Gracphic</li>
+                        </ul>
+            </div>
         </div>
     </div>
 </body>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>바닥글영역</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        .footer{
+            color: #fff;
+            background-color: #333;
+            width: 100%;
+            height: 150px;
+        }
+        #wrap{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .footer_logo{
+            color: #bbb;
+            float: left;
+            padding: 5px;
+        }
+        .footer_logo h1{
+            font-family:"Lobster";
+            font-size: 3rem;
+            margin-bottom: -5px;
+        }
+        .footer_list{
+            float: right;
+            width: 600px;
+            padding-top: 15px;
+        }
+        .footer_list>li{
+            float: left;
+            width: 150px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .sub{
+            margin-top: 20px
+        }
+        .sub li{
+            color: #bbb;
+            font-weight: normal;
+            text-align: left;
+            padding-left:30px;
+        }
+        #icon li{
+            float: left;
+            width: 30px;
+            height: 30px;
+            padding-left: 10px;            
+        }
+        #icon li a{
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-image: url(images/icon-sprite.png);
+            text-indent: -999999px;
+        }
+        #icon li a.so1{
+            background-position: left top
+        }
+        #icon li a.so2{
+            background-position: center top
+        }
+        #icon li a.so3{
+            background-position: right top
+        }
+        #icon li a.so1:hover{
+            background-position: left bottom;        
+        }
+        #icon li a.so2:hover{
+            background-position: center bottom;
+        }
+        #icon li a.so3:hover{
+            background-position: right bottom;
+        }
+            
+    </style>
+</head>
+<body>
+   <footer class="footer">
+       <div id="wrap">
+           <div class="footer_logo">
+               <h1>wave</h1>
+               <span>THE RECORDS</span>
+           </div>
+               <ul class="footer_list">
+                   <li>
+                       about Us
+                       <ul class="sub">
+                           <li>information</li>
+                           <li>team</li>
+                           <li>about</li>
+                       </ul>
+                   </li>
+                   <li>
+                       Creative Fields
+                       <ul class="sub">
+                           <li>xxx</li>
+                           <li>xxx</li>
+                           <li>xxx</li>
+                       </ul>
+                   </li>
+                   <li>
+                       Social Network
+                       <ul class="sub subimg" id="icon">
+                           <li><a href="#" class="so1">xxx</a></li>
+                           <li><a href="#" class="so2">xxx</a></li>
+                           <li><a href="#" class="so3">xxx</a></li>
+                       </ul>
+                   </li>
+               </ul>
+       </div>
+   </footer>
+       
+    
+</body>
+</html>
