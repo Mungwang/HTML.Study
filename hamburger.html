@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>햄버거</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: orange;
+        }
+        #wrap{
+            width: 1300px;
+            height: 380px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%)
+        }
+        
+        .hamber_box{
+            width: 400px;
+            height: 380px;
+            float: left;
+            margin-right: 50px;
+        }
+        .hamber_box:last-child{
+            margin-right: 0;
+        }
+        .hamber_box_img{
+            background-color: white;
+            height: 180px;
+            position: relative;
+        }
+        .hamber_box_img img{
+            position: absolute;
+            top: -100px;
+        }
+        .hamber_box_txt{
+            color: white;
+            height: 200px;
+            padding: 20px;
+            background-color: orangered;
+            box-sizing: border-box;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .hamber_box_txt h2{
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="hamber_box">
+            <div class="hamber_box_img">
+                <img src="images/hamburger.png" alt="">
+            </div>
+            <div class="hamber_box_txt">
+               <h2>햄버거</h2>
+               <p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, rerum, impedit. Omnis delectus soluta non. Laborum totam repellat facere dolorum maxime. Odio, natus, vero! Porro blanditiis laboriosam ad mollitia similique.
+               </p>
+            </div>
+        </div>
+        <div class="hamber_box">
+            <div class="hamber_box_img">
+                <img src="images/hamburger.png" alt="">
+            </div>
+            <div class="hamber_box_txt">
+               <h2>햄버거</h2>
+               <p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, rerum, impedit. Omnis delectus soluta non. Laborum totam repellat facere dolorum maxime. Odio, natus, vero! Porro blanditiis laboriosam ad mollitia similique.
+               </p>
+            </div>
+        </div>
+        <div class="hamber_box">
+            <div class="hamber_box_img">
+                <img src="images/hamburger.png" alt="">
+            </div>
+            <div class="hamber_box_txt">
+               <h2>햄버거</h2>
+               <p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, rerum, impedit. Omnis delectus soluta non. Laborum totam repellat facere dolorum maxime. Odio, natus, vero! Porro blanditiis laboriosam ad mollitia similique.
+               </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
