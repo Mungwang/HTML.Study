@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>q</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        #quick{
+            width: 100px;
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        #quick a{
+            display: block;
+            width: 200%;
+            height: 40px;
+            line-height: 40px;
+            padding: 20px;
+            color: white;
+            transition: 0.5s
+        }
+        #quick a.q1{background-color: #333;}
+        #quick a.q2{background-color: #444;}
+        #quick a.q3{background-color: #555;}
+        #quick a.q4{background-color: #666;}
+        #quick a.q5{background-color: green;}
+        
+        #quick a.q1:hover{background-color: brown;}
+        #quick a.q2:hover{background-color: burlywood;}
+        #quick a.q3:hover{background-color: palegoldenrod;}
+        #quick a.q4:hover{background-color: skyblue;}
+        #quick a.q5:hover{background-color: greenyellow;}
+        
+        #quick a:hover{ margin-left: -100%;}
+        
+        section{
+            min-height:1150px;
+        }
+        
+        #section1{
+            background-color: orangered;
+        }
+        #section2{
+            background-color: burlywood;
+        }
+        #section3{
+            background-color: palegoldenrod;
+        }
+        #section4{
+            background-color: green;
+        }
+        #section5{
+            background-color: orangered;
+        }
+        
+        section h2{
+            text-align: center;
+            color: #fff;
+            padding-top: 20px;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        section h2:before{
+            content: "";
+            display: block;
+            width: 50px;
+            height: 5px;
+            background-color: antiquewhite;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="quick">
+        <nav>
+           <a href="#section1" class="q1">1페이지</a>
+           <a href="#section2" class="q2">2페이지</a>
+           <a href="#section3" class="q3">3페이지</a>
+           <a href="#section4" class="q4">4페이지</a>
+           <a href="http://www.naver.com" class="q5">NAVER</a>
+        </nav> </div>
+    <section id="section1">
+        <h2>1페이지</h2>
+    </section>
+    <section id="section2">
+        <h2>2페이지</h2>
+    </section>
+    <section id="section3">
+        <h2>3페이지</h2>
+    </section>
+    <section id="section4">
+        <h2>4페이지</h2>
+    </section>
+    <section id="section5">
+        <h2>NAVER</h2>
+    </section>
+    
+</body>
+</html>

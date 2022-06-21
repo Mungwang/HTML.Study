@@ -2,82 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>y</title>
+    <title>box</title>
     <style>
         *{
             margin: 0;
             padding: 0;
         }
-        #wrap{
-            width: 1200px;
-            margin: 0 auto;
-        }
         .l_row{
             width: 100%;
-            margin-bottom: 10px;
+            height: 300px;
+            margin: 0 auto;
         }
-        .l_col{
-            height: 200px;
-            padding: 20px;
-            box-sizing: border-box;
-            border: 1px solid black;
+        .box{
+            width: 300px;
+            width: 300px;
             float: left;
+            margin-right: 50px;
+            position: relative;
+            overflow: hidden;
         }
-        
-        .l_col_100{
-            width: 100%
+        .box:last-child{
+            margin-right: 0;
         }
-        .l_col_50{
-            width: 50%
+        .box img{
+            width: 100%;
+            height: 100%;
         }
-        .l_col_33{
-            width: 33.333%
+        .box:after{
+            display: block;
+            content: "NB 신발";
+            width: 300px;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 20px;
+            box-sizing: border-box;
+            color: aquamarine;
+            font-weight: bold;
+            background-color: rgba(0,0,0,0.5);
+            position: absolute;
+            left: 0;
+            bottom: -50px;
+            transition: 0.5s
         }
-        .l_col_25{
-            width: 25%
+        .box:hover:after{
+            background-color: rgba(0,0,255,1);
+            color: deeppink;
+            bottom: 0;
         }
+
     </style>
+    
 </head>
+    
 <body>
-    <div id="wrap">
-        <div class="l_row">
-            <div class="l_col l_col_100">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-           </div>
-        </div>
-       <div class="l_row">
-            <div class="l_col l_col_50">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        </div>
-        <div class="l_col l_col_50">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        </div>
-    </div>
     <div class="l_row">
-            <div class="l_col l_col_33">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        <div class="box">
+            <img src="s2.png" alt="">
         </div>
-        <div class="l_col l_col_33">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        <div class="box">
+            <img src="s3.png" alt="">
         </div>
-         <div class="l_col l_col_33">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        <div class="box">
+            <img src="s4.png" alt="">
         </div>
-    </div>
-        <div class="l_row">
-        <div class="l_col l_col_25">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        </div>
-        <div class="l_col l_col_25">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        </div>
-         <div class="l_col l_col_25">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        </div>
-         <div class="l_col l_col_25">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        </div>
-    </div>
     </div>
 </body>
 </html>
