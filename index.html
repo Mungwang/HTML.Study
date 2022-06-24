@@ -2,150 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>컨테츠 레이아웃</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        a{
-            color: inherit;
-            text-decoration: none;
-        }
-        li{
-            list-style: none;
-        }
-        img{
-            vertical-align: top;
-        }
-        #wrap{
-            width: 1000px;
-            height: 500px;
-        }
-        .contents_box{
-            width: 300px;
-            height: 500px;
-            float: left;
-            margin-right: 50px;
-        }
-        .contents_title{
-            width: 300px;
-            height: 40px;
-            border-bottom: 1px solid #6a6a6a;
-            color: #6a6a6a;
-            font-size: 20px;
-            line-height: 40px;
-            padding-left: 10px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-        }
-        .contents_a_list li{
-            width: 300px;
-            height: 30px;
-            line-height: 30px;
-            padding-left: 20px;
-            box-sizing: border-box;
-            background: url(images/list_icon.png);
-            background-repeat: no-repeat;
-            background-position: 15px 15px;
-            position:relative;
-        }
-        .contents_a_list li a{
-            font-size: 12px;
-        }
-        .contents_a_list li a:hover{
-            color: #40a3e4;    
-        }
-        .contents_a_list li span{
-            font-size: 12px;
-            position: absolute;
-            right: 0;
-            top: 2px;    
-        }
-        .contents_info_list li{
-            width: 300px;
-            height: 60px;
-            padding: 3px 10px;
-            background-repeat: no-repeat;
-            box-sizing: border-box;
-            
-        }
-        .contents_info_list li a{
-            display:block;
-            width: 100%;
-            height: 100%;
-            text-indent: -99999px;
-        }
-        .contents_info li.icon01 a{
-            background: url(images/icon_out01.png);
-        }
-        .contents_info li.icon01 a:hover{
-            background: url(images/icon_over01.png);
-        }.contents_info li.icon02 a{
-            background: url(images/icon_out02.png);
-        }
-        .contents_info li.icon02 a:hover{
-            background: url(images/icon_over02.png);
-        }.contents_info li.icon03 a{
-            background: url(images/icon_out03.png);
-        }
-        .contents_info li.icon03 a:hover{
-            background: url(images/icon_over03.png);
-        }
-        
-        .contents_c{
-            margin-right: 0;
-        }
-        .contents_c_imgbox{
-            width: 300px;
-            height: 180px;
-            padding: 0 10px;
-            box-sizing: border-box;
-        }
-        
-    </style>
+    <title>강원천문대</title>
+    <link rel="stylesheet" href="css/cs.css">;
+    
 </head>
 <body>
     <div id="wrap">
-        <div class="contents_box contents_a">
-            <h2 class="contents_title">수강후기</h2>
-            <ul class="contents_a_list">
-                <li><a href="#">회계 1급과 세무 2급이 난이도가...</a><span>2018-05-16</span>
+        <header>
+        <h1 class="header_logo">
+            <a href="#"><img src="images/logo.gif" alt="로고"></a>
+        </h1>
+        <nav class="header_menu">
+            <ul class="header_menu_list">
+                <li>
+                    <a href="#">강원천문대</a>
+                       <ul class="sub_menu_list">
+                        <li><a href="#">천문대소개</a></li>
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
                 </li>
-                <li><a href="#">6개월간 많은 것을 배울 수 있었...</a><span>2018-05-14</span>
-                </li>
-                <li><a href="#">처음 배우는 코딩을 잘 따라올 수... </a><span>2018-05-13</span>
-                </li>
-                <li><a href="#">열심히 하시는 분들이 많아서 동...</a><span>2018-04-29</span>
-                </li>
-                <li><a href="#">선생님께서 잘 가르쳐주셔서 취...   </a><span>2018-04-22</span>
-                </li>
-                <li><a href="#">캐드를 처음 배우는데 잘 배운것... </a><span>2018-04-20</span>
-                </li>
+                <li>
+                    <a href="#">이용안내</a>
+                     <ul class="sub_menu_list">
+                 <li><a href="#">프로그램</a></li>
+                 <li><a href="#">관람시간표</a></li>
+                 <li><a href="#">이달의 별자리</a></li> 
+                     </ul>
+                   </li>
+                    <li>
+                    <a href="#">천문대예약</a>
+                     <ul class="sub_menu_list">
+                 <li><a href="#">예약하기</a></li>
+                 <li><a href="#">예약확인</a></li>
+                 <li><a href="#">예약취소</a></li> 
+                     </ul>
+                   </li>
+                    <li>
+                    <a href="#">커뮤니티</a>
+                     <ul class="sub_menu_list">
+                 <li><a href="#">공지사항</a></li>
+                 <li><a href="#">방문후기</a></li>
+                 <li><a href="#">자유게시판</a></li> 
+                     </ul>
+                   </li>
             </ul>
-        </div>
-        <div class="contents_box contents_info">
-            <h2 class="contents_title">학원안내</h2>
-            <ul class="contents_info_list">
-                <li class="icon01">
-                    <a href="#">아이콘01</a>
-                </li>
-                <li class="icon02">
-                    <a href="#">아이콘02</a>
-                </li>
-                <li class="icon03">
-                    <a href="#">아이콘03</a>
-                </li>
+        </nav>
+        </header>
+        <section class="slide">
+            <ul class="slide_list">
+                <li><img src="images/slider1.jpg" alt="메인이미지1"></li>
+                <li><img src="images/slider2.jpg" alt="메인이미지2"></li>
+                <li><img src="images/slider3.jpg" alt="메인이미지3"></li>
             </ul>
-        </div>
-        <div class="contents_box contents_c">
-            <h2 class="contents_title">현장스케치</h2>
-            <div class="contents_c_imgbox">
-                <a href="#">
-                    <img src="images/popup_small.png" alt="">
-                </a>
+            <div class="slide_txt">
+                강원천문대 별난세상별자리여행
+            </div>
+        </section>
+        <section class="contets">
+              <div class="contents_box notice_gallery">
+                   <ul class="board">
+                    <li class="on">
+                        <a href="#" class="tab">공지사항</a>
+                        <div class="board_box">
+                            <ul class="notice_list">
+                <li class="pop">[공지]4~6월(2분기) 별난 탐사단 모집<span>2019-03-25</span></li>
+                <li>[신규] 2020년 게이밍 우주클래스 장학생 모집 안내<span>2019-03-25</span></li>
+                <li>[긴급/필독] 시립서울천문대 휴관 안내<span>2019-03-25</span></li>
+                <li>2020년 제 3기 천문천체관측동아리 최종 합격자 안내<span>2019-03-25</span></li>
+                <li>[공지] 2020년 제 8기 천문과학지식봉사동아리 최종<span>2019-03-25</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li >
+                 <a href="#" class="tab">갤러리</a>
+                   <div class="board_box">
+                      <ul class="gallery_list">
+                    <li>
+                    <a href="#"> <img src="images/thumb1.jpg" alt="갤러리1"></a>
+                    </li>
+                    <li>
+                    <a href="#"><img src="images/thumb2.jpg" alt="갤러리2"></a>
+                    </li>
+                    <li>
+                    <a href="#"><img src="images/thumb3.jpg" alt="갤러리3"></a>
+                    </li>
+                    </ul>
+                 </div>
+                    </li>
+                </ul>
+              </div>
+              <div class="contents_box">
+                  배너
+              </div>
+              <div class="contents_box">
+                  바로가기
+              </div>
+        </section>
+        <div class="modal">
+            <h1>타이틀</h1>
+            <p class="modal_txt">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius odio laborum culpa odit inventore eligendi in omnis atque ipsum, facilis magni molestias quas unde mollitia et delectus voluptas asperiores repellat.
+            </p>
+            <div class="modal_x">
+                <a href="#">x 닫기</a>
             </div>
         </div>
+        <div class="modal_bg"></div>
     </div>
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/sc.js"></script>
 </body>
 </html>
