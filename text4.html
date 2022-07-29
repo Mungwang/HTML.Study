@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>플렉스 응용</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        #wrap{
+            display: flex;
+            flex-flow: row wrap;
+            width: 90%;
+            margin: 0 auto;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .header{
+            display: flex;
+            justify-content:flex-end;
+            position: relative;
+            width: 100%;
+            order: 1;
+        }
+        .header .logo{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 12%;
+            height: 145px;
+            background-color: #ff6b57;
+            font-weight: normal;
+            font-size: 1rem;
+            line-height: 145px;
+        }
+        .header nav{
+            width: 88%;
+            min-height: 80px;
+            line-height: 80px;
+            background-color: #ff6b57;
+        }
+        
+        .slider_section{
+            order: 2;
+            width: 50%;
+            height: 440px;
+            line-height: 440px;
+            background-color: #f8de73;
+        }
+        
+        .gallery_section{
+            order: 3;
+            width: 27%;
+            height: 440px;
+            line-height: 440px;
+            background-color: #3c90be;
+        }
+        .rankup_section{
+            order: 4;
+            width: 23%;
+            line-height: 440px;
+            background-color: #00d2a5;
+        }
+        
+        .lastest_post_section{
+            order: 5;
+            width: 30%;
+            line-height: 270px;
+            background-color: #9cabe4;
+        }
+        
+        .popular_post_section{
+            order: 6;
+            width: 30%;
+            line-height: 270px;
+            background-color: #d76817
+        }
+        
+        .banner_section{
+            display: flex;
+            order: 7;
+            flex-flow: column nowrap;
+            width: 25%;
+        }
+        .banner_section div{
+            flex: 1;
+        }
+        
+        .banner_1{
+            background-color: #0175bb;
+            line-height: 135px;
+        }
+        .banner_2{
+            background-color: #1261c9;
+            line-height: 135px;
+        }
+        
+        .social_section{
+            order: 8;
+            width: 15%;
+            height: 270px;
+            line-height: 270px;
+            background-color: #fe6eda;
+        }
+        
+        .footer{
+            order: 9;
+            width: 100%;
+            height: 94px;
+            line-height: 94px;
+            background-color: #474747;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            <h1 class="logo">LOGO</h1>
+            <nav>메뉴영역</nav>  
+        </header>        
+            <section class="slider_section">
+                슬라이드영역
+            </section>
+            <section class="gallery_section">
+                갤러리영역
+            </section>
+            <section class="rankup_section">
+                인기검색영역
+            </section>
+            <section class="lastest_post_section">
+                최근글영역
+            </section>
+            <section class="popular_post_section">
+                인기글영역
+            </section>
+            <section class="banner_section">
+                <div class="banner_1">
+                    배너1영역
+                </div>
+                <div class="banner_2">
+                    배너2영역
+                </div>
+            </section>
+            <section class="social_section">
+                소셜네트워크영역
+            </section>
+            <footer class="footer">푸터영역</footer>
+    </div>
+</body>
+</html>
