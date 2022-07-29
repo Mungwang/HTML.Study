@@ -1,74 +1,168 @@
 *{
     margin: 0;
     padding: 0;
+    text-align: center;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 90%;
+    max-width: 1370px;
+    margin: 0 auto;
+}
+.sec_tit{
+    margin: 20px 0;
+    background-color: antiquewhite;
+}
+.header{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: aliceblue;
+}
+.header_wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.header .logo{
+    width: 20%;
+    background-color: beige;
+}
+nav{
+    display: none;
+}
+.menu_toggle_btn{
+    width: 20%;
+    background-color: red;
+}
+#wrap{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+.slider{
+    width: 100%;
+    background-color: aquamarine;
+    height: 300px;
+}
+.section .content{
+    width: 100%;
+    display: flex;
+}
+.josuck_section{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    background-color: #5c5a5a;
+}
+.josuck_section p{
+    background-color: #4c9b81;
+    height: 100px;    
+}
+.josuck_img{
+    background-color: #30eaad;
+    height: 100px;
+}
+.king_section{
+    display: flex;
+}
+.king_list li{
+    margin: 10px 0;
+    background-color: #5c5a5a;
+}
+.work_section{
+    width: 100%;
+}
+.work_list{
+    width: 100%;
+}
+.work_list li{
+    margin: 20px 0;
+    width: 100%;
+    height: 100px;
+    background-color: orange;
+}
+.video_section{
+    width: 100%;
+}
+.video_list li{
+    margin: 20px 0;
+    height: 150px;
+    background-color: chocolate;
+}
+.contact_section{
+    width: 100%;
+}
+.from_box{
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
+}
+.footer{
+    width: 100%;
+    background-color: aqua;
 }
 
-body{
-    background-color: darkgray;
-}
-.wrapper{
+/*-------------------------------------------*/
+@media all and (min-width:768px){
+    .menu_toggle_btn{
+        display: none;
+    }
+    #wrap{
     margin: 0 auto;
-    width: 1500px;
-    height: 800px;
-    background-image: url(../images/bg.png);  
-}
-.joule{
-    position:relative;
-    width: 200px;
-    height: 400px;
-    background-image: url(../images/1.png);
-    background-position: right top;
-    background-repeat: no-repeat;
-    top: 310px;
-    left: 600px
-}
-.joule.end{
-    background-position: bottom;
-}
-.control{
-    overflow: auto;
-    width: 150px;
-    height: 150px;
-    left: 50%;
-    margin: 20px;
-    transform: translateX(-50%);
-    border-radius: 100%;
-    background-color: cornflowerblue;
-    position: relative;
-}
-.control a{
-    display: block;
-    width: 20px;
-    height: 50px;
-    margin: 0 10px;
-    background-image: url(../images/arrow.png);
-    background-repeat: no-repeat;
-    opacity: 0.6;
-}
-.control a:hover{
-    opacity: 1;
-}
-.control a.arr_left{
-    background-position: left;
-    position: absolute;
-    left: 0;
-    top: 50px;
-}
-.control a.arr_right{
-    background-position: right;
-    position: absolute;
-    right: 0;
-    top: 50px;
-}
-.control .height{
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    margin: 30px auto;
-    border-radius: 20px;
-    background-color: #fff;
-    color: #d4433b;
-    font-size: 20px;
+    display: flex;
     text-align: center;
-    font-family:'monospace'
+    }
+    .header_wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav{
+        display: flex;
+        width: 60%;
+    }    
+    .gnb{
+        width: 100%;
+        display: flex;
+    }
+    .gnb li{
+        width: 20%;
+    }
+    .josuck_section p{
+        float: left;
+        width: 50%;
+        height: 200px
+    }
+    .josuck_section .josuck_img{
+        width: 50%;
+        float: left;
+        height: 200px;
+    }
+    .king_list{
+        display: flex;
+        justify-content: space-between;
+    }
+    .king_section .king_list li{
+        width: 30%;
+        height: 200px;
+    }
+    .work_list{
+        width: 100%;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .work_list li{
+        width: 50%;
+    }
 }
